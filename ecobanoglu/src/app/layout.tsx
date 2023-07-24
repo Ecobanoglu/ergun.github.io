@@ -4,9 +4,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import { Header } from "@/app/components/common";
-
-import Sidebar from "@/app/components/common/Sidebar/Sidebar";
+import { Header } from "@/components/common";
 
 const inter = Inter({
   subsets: ["latin"],

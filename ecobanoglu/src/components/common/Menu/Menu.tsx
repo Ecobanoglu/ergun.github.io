@@ -2,9 +2,9 @@
 
 import { useState, useRef } from "react";
 
-import { Button } from "../../ui";
-import { Social } from "@/app/components/common/";
-import { useOnClickOutside } from "@/app/utils";
+import { Button } from "@/components/ui";
+import { Social } from "@/components/common/";
+import { useOnClickOutside } from "@/utils";
 
 const styleMenuItem =
   "py-3 px-6 block text-gray-200 text-2xl hover:text-primary-500 rounded-3xl transition";

@@ -3,10 +3,10 @@
 import React, { useState } from "react";
 import { useTheme } from "next-themes";
 
-import { useDarkMode } from "@/app/utils";
+import { useDarkMode } from "@/utils";
 
 interface Props {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
 }
 
