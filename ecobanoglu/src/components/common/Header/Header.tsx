@@ -1,5 +1,5 @@
 import { Menu, Logo } from "..";
-import { Switch } from "@/app/components/ui";
+import { Switch } from "@/components/ui";
 
 export default function Header() {
   return (
