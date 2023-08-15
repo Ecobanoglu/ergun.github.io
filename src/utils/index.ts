@@ -1,25 +1,12 @@
 import useOnClickOutside from "./useOnClickOutside";
-import isCurrentSection from "./useScrollElement";
+import useMouseWheel from "./useMouseWheel";
 import useSticky from "./useSticky";
+import useDarkMode from "./useDarkMode";
 import {
   getLocalStorage,
   setLocalStorage,
   removeLocalStorage,
 } from "./useLocalStorage";
-
-const useDarkMode = (theme: string) => {
-  const colorTheme = theme === "dark" ? "light" : "dark";
-
-  const root = window.document.documentElement;
-
-  root.classList.remove(theme);
-  root.classList.add(colorTheme);
-
-  if (typeof window !== "undefined") {
-    localStorage.setItem("ec_theme", colorTheme);
-  }
-  root.setAttribute("style", `color-scheme: ${colorTheme};`);
-};
 
 export {
   useOnClickOutside,
@@ -27,6 +14,6 @@ export {
   getLocalStorage,
   setLocalStorage,
   removeLocalStorage,
-  isCurrentSection,
+  useMouseWheel,
   useSticky,
 };

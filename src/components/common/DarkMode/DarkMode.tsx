@@ -24,6 +24,7 @@ export default function DarkMode() {
       className={`relative ml-4 z-50 ${
         checked ? "text-white ring-white dark:hover:text-primary-600" : ""
       } `}
+      aria-label="Toogle mode"
     >
       {!checked ? (
         <IconSun className="w-6 h-6" />

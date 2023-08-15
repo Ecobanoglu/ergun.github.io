@@ -50,7 +50,7 @@ export default function Menu() {
     {
       id: 2,
       title: "Deneyimler",
-      slug: "deneyimler",
+      slug: "experience",
     },
     {
       id: 3,
@@ -74,6 +74,7 @@ export default function Menu() {
             ? "text-white ring-white hover:text-primary-600 dark:hover:text-primary-600"
             : ""
         } `}
+        aria-label="Toogle menu"
       >
         {!showMenu ? (
           <IconMenu className="w-6 h-6" />
@@ -93,6 +94,7 @@ export default function Menu() {
                 href="#"
                 onClick={(e) => handleLinkClick(e, item.slug)}
                 className={styleMenuItem}
+                aria-label={item.title}
               >
                 {item.title}
               </Link>

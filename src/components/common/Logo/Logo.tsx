@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Logo() {
   return (
-    <Link href={"/"} className="text-center relative mr-auto">
+    <Link href={"/"} className="text-center relative mr-auto" aria-label="Logo">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="inline-block w-20 h-20 fill-current"
