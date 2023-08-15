@@ -29,7 +29,7 @@ export default function ProgressBar({
         {...attributes}
       >
         <div
-          className={`bg-gray-950 h-2.5 rounded-full dark:bg-gray-200`}
+          className={`bg-primary-500 h-2.5 rounded-full `}
           style={{ width: `${value}%` }}
         ></div>
       </div>

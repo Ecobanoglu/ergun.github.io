@@ -8,7 +8,7 @@ interface Props extends React.HTMLProps<HTMLDivElement> {
 }
 
 const BaseStyle: string =
-  "flex justify-center items-center min-h-screen pt-28 pb-8 lg:pt-16 lg:pb-12 text-xl lg:text-xl";
+  "flex justify-center items-center min-h-screen pt-28 pb-8 lg:pt-16 lg:pb-1 lg:text-lg";
 
 export default function Section({
   children,
@@ -23,7 +23,7 @@ export default function Section({
     >
       <div className="container px-4 lg:px-8 mx-auto">
         {title && (
-          <h2 className="font-black text-2xl lg:text-5xl/small block mb-4 lg:mb-12 text-center">
+          <h2 className="font-black text-2xl lg:text-5xl/small block mb-6 md:mb-8 lg:mb-16 text-center">
             {title}
           </h2>
         )}

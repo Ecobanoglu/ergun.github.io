@@ -4,7 +4,7 @@ import { Link } from "../ui";
 
 export default function Hero() {
   return (
-    <div className="flex justify-center items-center min-h-screen pt-28 pb-12 bg-primary-100 dark:bg-gray-900">
+    <div className="flex justify-center items-center min-h-screen pt-28 pb-12 bg-primary-50 dark:bg-gray-900">
       <div className="container px-4 lg:px-8 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 items-center justify-center text-center md:text-left">
           <div className="order-2 md:order-1">

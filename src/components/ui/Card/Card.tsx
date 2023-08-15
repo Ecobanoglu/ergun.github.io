@@ -18,13 +18,19 @@ const AboutCard = ({ title, description, color, className }: Props) => {
   return (
     <div
       className={cn(
-        `p-6 flex items-center justify-center text-center uppercase dark:bg-gray-800 rounded-lg w-full bg-gray-100 dark:shadow-slate-900 transition-all translate-y-0 ease-in-out duration-300 hover:-translate-y-2 hover:shadow-xl ${
+        `p-6 flex items-center justify-center text-center uppercase shadow-sm dark:bg-gray-800 rounded-lg w-full bg-gray-100 dark:shadow-slate-900 transition-all translate-y-0 ease-in-out duration-300 hover:-translate-y-2 hover:shadow-xl ${
           className && className
         }`
       )}
     >
       <div>
-        <h3 className="block font-black text-3xl lg:text-5xl mb-4">{title}</h3>
+        <h3
+          className={cn(
+            `block font-black text-${color}-500 text-3xl lg:text-5xl mb-4`
+          )}
+        >
+          {title}
+        </h3>
         <span>{description}</span>
       </div>
     </div>

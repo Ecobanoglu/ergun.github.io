@@ -6,6 +6,9 @@ import { Inter } from "next/font/google";
 
 import { Header } from "@/components/common";
 
+import { useMouseWheel } from "@/utils";
+import { useCallback, useEffect } from "react";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -23,6 +26,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  useMouseWheel();
+
   return (
     <html lang="tr">
       <body className="bg-slate-100 text-slate-950 dark:bg-slate-800 dark:text-slate-100">
