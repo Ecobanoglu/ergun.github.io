@@ -31,6 +31,7 @@ export default function ExperienceItem({ data }: ExperienceItemProps) {
           </li>
         ))}
       </ul>
+      {/**  
       <ul className="flex items-center justify-start mb-1 space-x-2 text-xs">
         {tags.map((tag: string, i: number) => (
           <li key={i}>
@@ -40,6 +41,7 @@ export default function ExperienceItem({ data }: ExperienceItemProps) {
           </li>
         ))}
       </ul>
+      */}
     </Item>
   );
 }
