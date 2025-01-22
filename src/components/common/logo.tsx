@@ -2,10 +2,15 @@ import Link from "next/link";
 
 export default function Logo() {
   return (
-    <Link href={"/"} className="text-center relative mr-auto" aria-label="Logo">
+    <Link
+      href={"/"}
+      className="text-center relative mr-auto text-black dark:text-white"
+      aria-label="Logo"
+      title="Ergün Çobanoğlu"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="inline-block w-20 h-20 fill-current"
+        className="inline-block w-16 h-16 fill-current"
         width="1024.000000pt"
         height="1024.000000pt"
         viewBox="0 0 1024.000000 1024.000000"

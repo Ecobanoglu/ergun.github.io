@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 const styleLink =
-  "flex items-center justify-center rounded-full w-10 h-10 text-center text-gray-950 bg-slate-100 hover:bg-primary-500 hover:text-white  transition";
+  "flex items-center justify-center rounded-lg w-10 h-10 text-center  bg-gray-100 hover:bg-primary-500 hover:text-white  transition";
 
 export default function Social() {
   return (
-    <ul className="list-none inline-flex items-center justify-start">
-      <li className="p-2">
+    <ul className="flex items-center justify-center space-x-3 mb-4">
+      <li>
         <Link href={"https://github.com"} rel="nofollow" className={styleLink}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ export default function Social() {
           </svg>
         </Link>
       </li>
-      <li className="p-2">
+      <li>
         <Link
           href={"https://linkedin.com"}
           rel="nofollow"

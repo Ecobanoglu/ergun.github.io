@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 
-import { Hero } from "@/components/sections/";
+import { About, Information, Abilities, Experience } from "@/components/blocks";
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
   title: "Anasayfa",
@@ -8,5 +15,11 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <Hero />;
+  return (
+    <>
+      <About />
+      <Abilities />
+      <Experience />
+    </>
+  );
 }
