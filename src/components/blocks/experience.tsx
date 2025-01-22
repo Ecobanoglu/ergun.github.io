@@ -1,16 +1,18 @@
-import Link from "next/link";
+import React from "react";
 
 import { Section } from "@/components/ui";
-import ExperienceItem, {
-  type IExperienceItem,
-} from "@/components/experience-item";
+import ExperienceItem from "@/components/experience-item";
+
+import { IExperienceItem } from "@/lib/types";
 
 const experiences = [
   {
     id: 0,
     title: "Sr. Front-End Developer",
     company: "PQS Global Software",
-    options: ["İzmir", "January 2021 - Now", "Full-time"],
+    time: "January 2021 - Now",
+    location: "İzmir",
+    type: "Full-time",
     description: [
       "Web sitesi geliştirme, web siteleri ve web uygulamaları oluşturma, programlama, kodlama ve sürdürme sürecidir.",
     ],
@@ -20,7 +22,9 @@ const experiences = [
     id: 1,
     title: "Sr. Front-End Developer",
     company: "Egegen",
-    options: ["İzmir", "October 2018 - December 2020", "Full-time"],
+    time: "October 2018 - December 2020",
+    location: "İzmir",
+    type: "Full-time",
     description: [
       "Kurumsal, e-ticaret ve özel web projelerinin front-end kodlamasını geliştirdim.",
       "Outlook imza, e-posta gönderimi için şablon tasarımlarını kodladım.",
@@ -32,7 +36,9 @@ const experiences = [
     id: 2,
     title: "Front-End Developer",
     company: "Fikir 360",
-    options: ["İzmir", "October 2014 - March 2016", "Full-time"],
+    time: "October 2014 - March 2016",
+    location: "İzmir",
+    type: "Full-time",
     description: [
       "HTML5, CSS3, Javascript ve Javascript çerçeveleri ile mobil uyumlu web siteleri ve özel projeler geliştirdim.",
       "Web siteleri için basit PHP ve MySQL ve HTML5 tabanlı yönetim panelleri geliştirdim.",
@@ -43,7 +49,9 @@ const experiences = [
     id: 3,
     title: "Front-End Developer",
     company: "Sesnet Medya",
-    options: ["İzmir", "Jebruary 2014 - January 2016", "Full-time"],
+    time: "Jebruary 2014 - January 2016",
+    location: "İzmir",
+    type: "Full-time",
     description: [
       "HTML5, CSS3, Javascript ve Javascript çerçeveleri ile mobil ve tarayıcı (IE 7-10) uyumlu web siteleri geliştirdim.",
       "E-posta haber bültenlerini kodluyordum.",
@@ -55,7 +63,9 @@ const experiences = [
     id: 4,
     title: "Front-End Developer",
     company: "Veriyaz",
-    options: ["İzmir", "December 2009 - Jebruary 2013", "Full-time"],
+    time: "December 2009 - February 2013",
+    location: "İzmir",
+    type: "Full-time",
     description: [
       "HTML5, CSS3, Javascript ve Javascript çerçeveleri ile mobil ve tarayıcı (IE 7-10) uyumlu web siteleri geliştirdim.",
       "E-posta haber bültenlerini kodluyordum.",
@@ -65,7 +75,7 @@ const experiences = [
   },
 ];
 
-export default function Page() {
+export default function Experience() {
   return (
     <Section title="Work Experience">
       <div className="grid grid-cols-1 gap-4">

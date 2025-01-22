@@ -3,15 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --background-color: theme(colors.gray.100);
-  --text-color: theme(colors.gray.950);
+  --background-color: theme(colors.white);
+  --text-color: theme(colors.gray.600);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: theme(colors.gray.800);
+    --background-color: theme(colors.black);
     --text-color: theme(colors.gray.100);
   }
+}
+
+[data-theme="light"] {
+  --background-color: theme(colors.white);
+  --text-color: theme(colors.gray.600);
+}
+
+[data-theme="dark"] {
+  --background-color: theme(colors.black);
+  --text-color: theme(colors.gray.100);
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
 }
 
 body {

@@ -1,13 +1,8 @@
-"use client";
-
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import { Header } from "@/components/common";
-
-import { useMouseWheel } from "@/utils";
-import { useCallback, useEffect } from "react";
+import { Header, ProfileCard } from "@/components/common";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,13 +21,22 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  useMouseWheel();
-
   return (
-    <html lang="tr">
-      <body className="bg-slate-100 text-slate-950 dark:bg-slate-800 dark:text-slate-100">
-        <Header />
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className="bg-gray-100 text-gray-600 dark:bg-black dark:text-gray-400">
+        {/*<Header /> */}
+        <div className="max-w-screen-xl px-4 lg:px-8 mx-auto pt-16 lg:pt-24">
+          <div className="grid grid-cols-1 lg:grid-cols-9 gap-4 xl:gap-x-8">
+            <div className="lg:col-span-3">
+              <ProfileCard />
+            </div>
+            <div className="lg:col-span-6">
+              <div className="bg-white p-3 lg:p-4 xl:p-6 rounded-2xl">
+                {children}
+              </div>
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );
