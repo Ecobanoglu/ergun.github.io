@@ -1,25 +1,28 @@
 import React from "react";
 
-import { Section } from "@/components/ui";
+import { Card } from "@/components/ui";
 
 export default function About() {
   return (
-    <Section>
+    <Card>
       <p className="mb-3">
-        Hello! My name is <span className="font-semibold">Ergun Cobanoglu</span>
-        . I'm experienced in front-end developer and I'm very passionate and
-        dedicated to my work.
+        Merhaba! Adım{" "}
+        <span className="font-semibold dark:text-gray-300">
+          Ergun Çobanoğlu
+        </span>
+        . Front-end geliştirici konusunda deneyimliyim ve işime çok tutkulu ve
+        bağlıyım.
       </p>
       <p>
-        With 10 years of experience as{" "}
-        <span className="font-semibold">
-          a professional front-end developer
-        </span>
-        , I have acquired the necessary knowledge and skills to make your
-        project a success. Currently, I am seeking opportunities to further
-        develop my skills and contribute to innovative projects within the tech
-        industry.
+        Profesyonel bir{" "}
+        <span className="font-semibold dark:text-gray-300">
+          Front-End Developer
+        </span>{" "}
+        olarak 10 yıllık deneyimimle, projenizi başarıya ulaştırmak için gerekli
+        bilgi ve becerileri edindim. Şu anda, becerilerimi daha da geliştirmek
+        ve teknoloji endüstrisindeki yenilikçi projelere katkıda bulunmak için
+        fırsatlar arıyorum.
       </p>
-    </Section>
+    </Card>
   );
 }

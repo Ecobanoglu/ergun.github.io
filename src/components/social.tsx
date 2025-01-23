@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const styleLink =
-  "flex items-center justify-center rounded-lg w-10 h-10 text-center  bg-gray-100 hover:bg-primary-500 hover:text-white  transition";
+  "flex items-center justify-center rounded-lg w-10 h-10 text-center bg-gray-100 border border-gray-200 hover:bg-black hover:text-white dark:bg-gray-700 dark:border-gray-600 transition";
 
 export default function Social() {
   return (

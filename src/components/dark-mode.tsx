@@ -23,9 +23,7 @@ export default function DarkMode() {
     <Button
       variant="link"
       onClick={toggleMenu}
-      className={`relative ml-4 z-50 ${
-        checked ? "text-white ring-white dark:hover:text-primary-600" : ""
-      } `}
+      className={`relative ml-4 z-50 `}
       aria-label="Toogle mode"
     >
       {!checked ? (
