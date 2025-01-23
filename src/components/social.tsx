@@ -7,7 +7,12 @@ export default function Social() {
   return (
     <ul className="flex items-center justify-center space-x-3 mb-4">
       <li>
-        <Link href={"https://github.com"} rel="nofollow" className={styleLink}>
+        <Link
+          href="https://github.com/ecobanoglu"
+          target="_blank"
+          rel="nofollow"
+          className={styleLink}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="28"
@@ -23,7 +28,8 @@ export default function Social() {
       </li>
       <li>
         <Link
-          href={"https://linkedin.com"}
+          href="https://www.linkedin.com/in/ergunc/"
+          target="_blank"
           rel="nofollow"
           className={styleLink}
         >
