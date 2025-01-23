@@ -12,3 +12,8 @@ export interface IValue {
   title: string;
   value: string;
 }
+
+export interface IAbility {
+  title: string;
+  items: string[];
+}

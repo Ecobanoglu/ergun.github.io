@@ -22,9 +22,9 @@ export default function Section({
     >
       <div>
         {title && (
-          <h2 className="font-bold mb-3 text-xl text-black dark:text-white">
+          <h3 className="font-bold mb-3 lg:mb-5 text-xl lg:text-2xl uppercase text-black dark:text-gray-300">
             {title}
-          </h2>
+          </h3>
         )}
         {children}
       </div>
