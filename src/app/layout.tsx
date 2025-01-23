@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import { Header, ProfileCard } from "@/components/common";
+import { Header, ProfileCard } from "@/components";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,18 +23,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-gray-100 text-gray-600 dark:bg-black dark:text-gray-400">
-        {/*<Header /> */}
-        <div className="max-w-screen-xl px-4 lg:px-8 mx-auto pt-16 lg:pt-24">
-          <div className="grid grid-cols-1 lg:grid-cols-9 gap-4 xl:gap-x-8">
+      <body className="bg-gray-200/30 text-gray-600 dark:bg-[#0f1629] dark:text-gray-400">
+        <Header />
+        <div className="max-w-screen-xl px-3 md:px-4 lg:px-8 mx-auto pt-12 lg:pt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-9 gap-4 lg:gap-x-6">
             <div className="lg:col-span-3">
               <ProfileCard />
             </div>
-            <div className="lg:col-span-6">
-              <div className="bg-white p-3 lg:p-4 xl:p-6 rounded-2xl">
-                {children}
-              </div>
-            </div>
+            <div className="lg:col-span-6">{children}</div>
           </div>
         </div>
       </body>

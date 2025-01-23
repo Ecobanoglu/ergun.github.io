@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Item } from "@/components/ui";
+import { Box } from "@/components/ui";
 
 import { IExperienceItem } from "@/lib/types";
 
@@ -11,20 +11,14 @@ interface ExperienceItemProps {
 export default function ExperienceItem({ data }: ExperienceItemProps) {
   const { title, company, time, location, type, description, tags } = data;
   return (
-    <Item>
-      <ul className="flex items-center justify-start mb-1 text-sm">
-        <li className="before:content-['•'] before:inline-block before:px-3 before:first:hidden">
-          <span>{time}</span>
-        </li>
-        <li className="before:content-['•'] before:inline-block before:px-3 before:first:hidden">
-          <span>{type}</span>
-        </li>
-      </ul>
-      <h3 className="font-bold mb-2">
-        {title} - <span className="text-black">{company}</span>
-      </h3>
-
-      <ul className="list-outside list-disc ml-6 mb-3">
+    <Box>
+      <h4 className="font-bold dark:text-gray-300 mb-2">{title}</h4>
+      <div className="flex items-center space-x-4 mb-2">
+        <h5 className="font-semibold dark:text-gray-300">{company}</h5>
+        <span>-</span>
+        <p className="text-sm">{time}</p>
+      </div>
+      <ul className="list-outside list-disc ml-6">
         {description.map((item: string, i: number) => (
           <li key={i} className="">
             {item}
@@ -42,6 +36,6 @@ export default function ExperienceItem({ data }: ExperienceItemProps) {
         ))}
       </ul>
       */}
-    </Item>
+    </Box>
   );
 }
