@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 
 import { Header, ProfileCard } from "@/components";
 
@@ -24,15 +25,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="bg-gray-200/30 text-gray-600 dark:bg-[#0f1629] dark:text-gray-400">
-        <Header />
-        <div className="max-w-screen-xl px-3 md:px-4 lg:px-8 mx-auto pt-12 lg:pt-16">
-          <div className="grid grid-cols-1 lg:grid-cols-9 gap-4 lg:gap-x-6">
-            <div className="lg:col-span-3">
-              <ProfileCard />
+        <ThemeProvider attribute="class">
+          <Header />
+          <div className="max-w-screen-xl px-3 md:px-4 lg:px-8 mx-auto pt-6">
+            <div className="grid grid-cols-1 lg:grid-cols-9 gap-4 lg:gap-x-6">
+              <div className="lg:col-span-3">
+                <ProfileCard />
+              </div>
+              <div className="lg:col-span-6">{children}</div>
             </div>
-            <div className="lg:col-span-6">{children}</div>
           </div>
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   );
