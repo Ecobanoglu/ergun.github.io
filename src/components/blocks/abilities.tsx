@@ -7,7 +7,7 @@ import { IAbility } from "@/lib/types";
 export default function Abilities() {
   const abilities = [
     {
-      title: "Frontend Development",
+      title: "Front-End Development",
       items: [
         "React",
         "Next.js",
@@ -29,13 +29,13 @@ export default function Abilities() {
         "Responsive Design",
         "Kullanıcı Deneyimi",
         "UI/UX",
-        "BEM",
+        "İmza Şablonu",
         "Mail Şablonları",
         "UI Animasyon",
       ],
     },
     {
-      title: "Backend Development",
+      title: "Back-End Development",
       items: [
         "REST APIs",
         "Mysql",

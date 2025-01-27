@@ -7,14 +7,16 @@ export default function ProfileCard() {
   return (
     <div className="sticky top-0">
       <Card className="text-center">
+        {/*
         <div className="text-center max-w-32 mx-auto relative -mt-[81px]">
           <Logo className="w-32 h-32 mx-auto" />
         </div>
-        <h1 className="text-3xl font-bold text-black dark:text-white mb-3">
+        */}
+        <h1 className="text-3xl font-bold text-black dark:text-white mb-3 lg:mb-4">
           <a href="/">Ergün Çobanoğlu</a>
         </h1>
-        <h2 className="text-lg font-semibold bg-gray-100 border border-gray-200 dark:bg-gray-700 dark:border-gray-600 py-2 px-3 leading-none inline-block rounded-lg mb-3">
-          Front-end Developer
+        <h2 className="text-lg font-semibold bg-gray-100 border border-gray-200 dark:bg-gray-700 dark:border-gray-600 py-2 px-3 leading-none inline-block rounded-lg mb-3 lg:mb-4">
+          Sn. Front-end Developer
         </h2>
 
         <Social />
