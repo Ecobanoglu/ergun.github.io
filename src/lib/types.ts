@@ -17,3 +17,15 @@ export interface IAbility {
   title: string;
   items: string[];
 }
+
+interface IProjectLink {
+  source?: string;
+  live?: string;
+}
+export interface IProject {
+  title: string;
+  image?: string;
+  description: string;
+  tags?: string[];
+  links: IProjectLink;
+}
