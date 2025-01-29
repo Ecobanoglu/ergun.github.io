@@ -17,8 +17,6 @@ export default function DarkMode() {
     const root = window.document.documentElement;
     const colorTheme = theme ? "dark" : "light";
 
-    console.log(colorTheme);
-
     if (theme) {
       root.classList.remove("light");
       root.classList.add("dark");
