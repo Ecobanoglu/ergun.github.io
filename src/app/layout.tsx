@@ -7,13 +7,6 @@ import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-  weight: ["300", "400", "500", "600", "700", "900"],
-});
-
 export const metadata: Metadata = {
   title: "Front End Developer | Ergün Çobanoğlu",
   description:
@@ -28,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${inter.variable} bg-gray-200/30 text-gray-600 dark:bg-[#0f1629] dark:text-gray-400`}
+        className={` bg-gray-200/30 text-gray-600 dark:bg-[#0f1629] dark:text-gray-400`}
       >
         <Header />
         <div className="max-w-screen-xl px-3 md:px-4 lg:px-8 mx-auto pt-6">
