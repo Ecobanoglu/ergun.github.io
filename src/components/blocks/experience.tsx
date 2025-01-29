@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Card, Item } from "@/components/ui";
+import { Card } from "@/components/ui";
 import ExperienceItem from "@/components/experience-item";
 
 import { IExperienceItem } from "@/lib/types";

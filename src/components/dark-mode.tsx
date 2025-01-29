@@ -1,32 +1,51 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { Button } from "@/components/ui";
 
-import { useDarkMode } from "@/lib/hooks";
-
 export default function DarkMode() {
-  const [checked, setChecked] = useState(false);
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
-  const toggleMenu = () => {
-    setChecked(!checked);
+  useEffect(() => {
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
+    setDarkMode(isDarkMode);
+    setTheme(isDarkMode);
+  }, []);
 
-    if (checked) {
-      useDarkMode("dark");
+  const setTheme = (theme: boolean) => {
+    const root = window.document.documentElement;
+    const colorTheme = theme ? "dark" : "light";
+
+    console.log(colorTheme);
+
+    if (theme) {
+      root.classList.remove("light");
+      root.classList.add("dark");
     } else {
-      useDarkMode("light");
+      root.classList.remove("dark");
+      root.classList.add("light");
     }
+
+    if (typeof window !== "undefined") {
+      localStorage.setItem("ec_theme", colorTheme);
+    }
+    root.setAttribute("style", `color-scheme: ${colorTheme};`);
+  };
+
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+    setTheme(darkMode);
   };
 
   return (
     <Button
       variant="link"
-      onClick={toggleMenu}
+      onClick={toggleDarkMode}
       className={`relative ml-4 z-50 `}
       aria-label="Toogle mode"
     >
-      {!checked ? (
+      {!darkMode ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-6 h-6"
