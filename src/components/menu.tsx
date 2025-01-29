@@ -1,13 +1,10 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useTheme } from "next-themes";
 
 export default function Menu() {
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const [showMenu, setShowMenu] = useState(false);
 
   const styleMenuItem =
     "py-1 block relative text-black transition dark:text-white rounded-3xl transition font-medium  after:content-[''] after:absolute after:left-0 after:top-full after:h-0.5 after:w-0  hover:after:w-full after:bg-current after:transition-all after:duration-300 ";

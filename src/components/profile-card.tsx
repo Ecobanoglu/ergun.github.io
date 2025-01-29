@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Social, Logo } from "@/components";
+import { Social } from "@/components";
 import { Button, Card, Box } from "./ui";
 import Link from "next/link";
 
