@@ -1,8 +1,8 @@
 "use client";
 
-import { Logo, DarkMode, Menu } from "@/components";
+import { Logo, DarkMode } from "@/components";
 
-import { useSticky } from "@/lib/hooks";
+import useSticky from "@/lib/hooks/use-sticky";
 
 export default function Header() {
   const sticky = useSticky(5) ? "bg-white dark:bg-gray-800 shadow-md" : "";
