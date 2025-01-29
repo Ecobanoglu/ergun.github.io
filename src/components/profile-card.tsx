@@ -2,6 +2,7 @@ import React from "react";
 
 import { Social, Logo } from "@/components";
 import { Button, Card, Box } from "./ui";
+import Link from "next/link";
 
 export default function ProfileCard() {
   return (
@@ -13,7 +14,7 @@ export default function ProfileCard() {
         </div>
         */}
         <h1 className="text-3xl font-bold text-black dark:text-white mb-3 lg:mb-4">
-          <a href="/">Ergün Çobanoğlu</a>
+          <Link href="/">Ergün Çobanoğlu</Link>
         </h1>
         <h2 className="text-lg font-semibold bg-gray-100 border border-gray-200 dark:bg-gray-700 dark:border-gray-600 py-2 px-3 leading-none inline-block rounded-lg mb-3 lg:mb-4">
           Sn. Front-end Developer
