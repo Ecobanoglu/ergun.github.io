@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 
 import { Header, ProfileCard } from "@/components";
 
+import { Analytics } from "@vercel/analytics/react";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -33,6 +35,8 @@ export default function RootLayout({
             <div className="lg:col-span-6">{children}</div>
           </div>
         </div>
+
+        <Analytics />
       </body>
     </html>
   );
