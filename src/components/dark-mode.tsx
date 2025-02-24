@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui";
 
 export default function DarkMode() {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [darkMode, setDarkMode] = useState<boolean>(true);
 
   useEffect(() => {
     const isDarkMode = localStorage.getItem("darkMode") === "true";
