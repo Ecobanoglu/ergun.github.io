@@ -22,7 +22,7 @@ export default function ProfileCard() {
 
         <Social />
 
-        <Box className="text-left divide-y mb-4 lg:mb-6 divide-gray-300/60 dark:divide-gray-600">
+        <Box className="text-left divide-y mb-0 divide-gray-300/60 dark:divide-gray-600">
           <div className="py-3">
             <h5 className="text-sm">E-posta</h5>
             <a
