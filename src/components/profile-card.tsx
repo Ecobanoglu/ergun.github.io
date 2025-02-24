@@ -49,7 +49,7 @@ export default function ProfileCard() {
           </div>
         </Box>
 
-        <Button className="mb-3 lg:mb-0">Özgeçmiş Görüntüle</Button>
+        {/*<Button className="mb-3 lg:mb-0">Özgeçmiş Görüntüle</Button>*/}
       </Card>
     </div>
   );
